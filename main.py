@@ -1,13 +1,5 @@
-# bot.py
+# from langchain_openai import ChatOpenAI
 
-from chatterbot import ChatBot
+# llm = ChatOpenAI(openai_api_key="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")
 
-chatbot = ChatBot("Chatpot")
-
-exit_conditions = (":q", "quit", "exit")
-while True:
-    query = input("> ")
-    if query in exit_conditions:
-        break
-    else:
-        print(f"looksmaxxing {chatbot.get_response(query)}")
+# llm.invoke("how can langsmith help with testing?")
